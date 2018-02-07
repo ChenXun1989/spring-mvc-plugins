@@ -1,0 +1,44 @@
+<idea-plugin version="2">
+  <id>com.your.company.unique.plugin.id</id>
+  <name>spring-mvc-curl</name>
+  <version>1.0</version>
+  <vendor email="576481228@qq.com" url="http://www.chenxun.wii">陈勋</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>export curl with spring mvc</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="springMvcCurl" class="wiki.chenxun.idea.plugins.SpringMvcCurlAction" text="spring-mvc-curl"
+            description="export curl with spring mvc">
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+    </action>
+  </actions>
+
+  <module-components>
+    <component>
+      <implementation-class>wiki.chenxun.idea.plugins.SpringMvcCurlModuleComponent</implementation-class>
+    </component>
+  </module-components>
+</idea-plugin>
